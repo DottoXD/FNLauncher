@@ -1,5 +1,6 @@
 # FNLauncher
 A simple Fortnite launcher to bypass the "Fortnite was not started correctly and needs to be closed" error on old versions (5.00+).
+This project is for educational purposes only. If you are an Epic Games employee and have an issue with this please open a GitHub issue.
 
 # How to use?
 The compiled .exe in "Actions" expects your game to be located at "C:\users\<user>\.fnlauncher\7.40". 
