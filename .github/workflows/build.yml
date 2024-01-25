@@ -1,0 +1,19 @@
+name: Build FNLauncher
+on: [push]
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.21.0'
+      - run: go mod init example.com/mymodule
+      - run: go get -u golang.org/x/sys
+      - run: go build main.go
+      - name: Publish
+        uses: actions/upload-artifact@v3
+        with:
+          name: FNLauncher
+          path: D:\a\Launcher\Launcher\main.exe
