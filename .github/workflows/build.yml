@@ -13,7 +13,7 @@ jobs:
       - run: go get -u golang.org/x/sys
       - run: go build main.go
       - name: Publish
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: FNLauncher
           path: D:\a\FNLauncher\FNLauncher\main.exe
